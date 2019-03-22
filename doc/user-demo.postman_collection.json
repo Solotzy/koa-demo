@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "e184e332-e259-44be-9653-7faf5f146357",
+		"name": "user-demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://127.0.0.1:8387/api/v1/user/getUsers",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8387",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"getUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"tzy\",\n\t\"age\":\"27\",\n\t\"sex\":\"1\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8387/api/v1/user/CreateUser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8387",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"CreateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"name\":\"tzy\",\n\t\"age\":\"28\",\n\t\"sex\":\"1\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8387/api/v1/user/UpdateUser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8387",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"UpdateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\": 1\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8387/api/v1/user/DeleteUser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8387",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"DeleteUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
